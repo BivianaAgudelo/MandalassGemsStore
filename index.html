@@ -2,203 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/cd2331958e.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/9c32a25bcb.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/mandala-favicon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Mandalass Bisutería</title>
 </head>
 
 <body>
-    <div clase="container-fluid">
-        <header id="header">
-            <div class="row">
-                <div class="col-3">
-                    <img id="header-img" class=img-fluid width="220" height="220" src="./img/mandalaLogo.png"  alt="logo">
-                </div>
-                <div class="col-5"></div>
-                <div class="col-4">
-                    <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light" style="background-color: #f79bf4;">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- HEADER -->
+    <header>
+        <div class="container__header">
+            <h1>
+                <img src="./img/mandalaLogo.png" alt="Logo de Bisutería Mandalass" />
+            </h1>
+            <nav>
+                <button class="nav__toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactenos">Contáctenos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#video">NOSOTROS</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#envios">SERVICIOS</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#galeria">GALERÍA</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#contactenos">CONTACTENOS</a>
-                                </li>
+    <!-- SERVICIOS -->
 
-                            </ul>
-                        </div>
-                    </nav>
+    <section>
+        <div class="container__servicios">
+            <div class="servicios">
+                <div class="icon-group">
+                    <i class="fa-solid fa-truck-fast"></i>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-1">
-                    <div class="icon-group">
-                        <i class="fas fa-shipping-fast"></i>
-                    </div>
-                </div>
-                <div class="col-8">
-                    <div id="envios"></div>
+                <div class="informacion">
                     <h3>Envíos y Pagos</h3>
-                    <p>El pago contra entrega inicia al momento de la imposición del envío en cualquier ciudad, y el
-                        destinatario lo paga al momento de reclamarlo en el Punto de Venta.</p>
+                    <p>
+                        El pago contra entrega inicia al momento de la imposición del envío en
+                        cualquier ciudad, y el destinatario lo paga al momento de reclamarlo
+                        en el Punto de Venta.
+                    </p>
                 </div>
-                <div class="col-2"></div>
             </div>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-1">
-                    <div class="icon-group">
-                        <i class="fas fa-store"></i>
-                    </div>
+
+            <div class="servicios">
+                <div class="icon-group">
+                    <i class="fa-solid fa-store"></i>
                 </div>
-                <div class="col-8">
+                <div class="informacion">
                     <h3>Tienda</h3>
-                    <p>Somos una empresa que llevamos 15 años en el mercado, somos importadores directos, importamos
-                        todo lo relacionado con insumos de bisutería y joyería, así como todo para la fabricación de
-                        fantasías.</p>
+                    <p>
+                        Somos una empresa que llevamos 15 años en el mercado, somos
+                        importadores directos, importamos todo lo relacionado con insumos de
+                        bisutería y joyería, así como todo para la fabricación de fantasías.
+                    </p>
                 </div>
-                <div class="col-2"></div>
             </div>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-1">
-                    <div class="icon-group">
-                        <i class="fas fa-address-book"></i>
-                    </div>
+
+            <div class="servicios">
+                <div class="icon-group">
+                    <i class="fa-solid fa-headset"></i>
                 </div>
-                <div class="col-8">
+                <div class="informacion">
                     <h3>Tus Dudas</h3>
-                    <p>Bienvenido a la sección de Servicio al Cliente, en donde podrás compartirnos tus dudas,
-                        comentarios y sugerencias.</p>
+                    <p>
+                        Bienvenido a la sección de Servicio al Cliente, en donde podrás
+                        compartirnos tus dudas, comentarios y sugerencias.
+                    </p>
                 </div>
-                <div class="col-2"></div>
+
             </div>
-            <div id="box" class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
-                    <form id="form" action="https://www.freecodecamp.com/email-submit">
-                        <label for="email" id="email-label"><u>Entérate de nuestras colecciones</u></label>
-                        <br><input id="email" name="email" class="box" type="email"
-                            placeholder="ingresa aquí tu correo"></br>
-                        <input id="submit" type="submit" value="enviar">
-                    </form>
-                </div>
-                <div class="col-4"></div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3 col-md-3 col-lg-3"></div>
-                <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe id="video" src="https://www.youtube.com/embed/zF7LEAjlSYk" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="col-sm-3 col-md-3 col-lg-3"></div>
-                </div>
-            </div>
-
-            <section clas="container">
-
-                <div class="tex-center pt-5">
-                    <div id="galeria"></div>
-                    <h1><strong><u>Galería</u></strong></h1>
-                </div>
-
-                <div id="galeria" class="row">
-            
-                    <div class="col-lg-4 col-md-6 col-sm-12 img-galeri">
-                        <img class="img-show" src="img/pulsera1.jpg" alt="galería">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 img-galeri">
-                        <img class="img-show" src="img/pulsera2.jpg" alt="galería">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 img-galeri">
-                        <img class="img-show" src="img/pulsera3.jpg" alt="galería">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 img-galeri">
-                        <img class="img-show" src="img/pulsera4.jpg" alt="galería">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 img-galeri">
-                        <img class="img-show" src="img/oulsera5.jpg" alt="galería">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 img-galeri">
-                        <img class="img-show" src="img/tobillera1.jpg" alt="galería">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 img-galeri">
-                        <img class="img-show" src="img/collar.jpg" alt="galería">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 img-galeri">
-                        <img class="img-show" src="img/aretes2.jpg" alt="galería">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 img-galeri">
-                        <img class="img-show" src="img/aretes1.jpg" alt="galería">
-                    </div>
-                </div>
-
-            </section>
-
-            <div id="footer">
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-2">
-                        <img  id="img-footer" src="img/azulMandala.jpg" alt="galería">
-                    </div>
-                    <div class="col-3">
-                        <div id="contactenos"></div>
-                        <h5><strong>CONTACTENOS</strong></h5>
-                    </div>
-                    <div class="col-4">
-                        <div class="icon-group">
-                            <a href="https://www.facebook.com/" target="_blank" class="mx-1"><i
-                                class="fab fa-facebook-square"></i></a>
-                            <a href="https://twitter.com/?lang=es" target="_blank" class="mx-1"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="mx-1"><i
-                                class="fab fa-instagram-square"></i></a>
-                            <a href="https://co.pinterest.com/" target="_blank" 
-                            class="mx-1"><i class="fab fa-pinterest"></i></a>
-                            <h6><strong>2020 Copyright, Bisutería Original</strong></h6>
-                        </div>
-                    </div>
-                    <div class="col-2"></div>
-                </div>
-            </div>
-
-        </header>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-
+        </div>
+    </section>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
-
-
