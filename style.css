@@ -13,10 +13,12 @@
     --color-rosa-medianoche: #2B051C;
     /* Rosa Cereza Intensa */
     --color-rosa-cereza-intensa: #F157A4;
+
+    --color-rosa-cereza-intensa: #810338
 }
 
 body {
-    background-image: url('./img/fondo1.jpg');
+    background-image: url('./img/background.jpg');
 }
 
 /* HEADER */
@@ -180,13 +182,12 @@ nav {
 }
 
 
-/* SERVICIOS */
+/* SECCIÓN SERVICIOS */
 
 .container__servicios {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* Espacio entre cada elemento */
     width: 940px;
     margin: 0 auto;
     padding-top: 200px;
@@ -221,4 +222,194 @@ nav {
     margin-bottom: 20px;
     color: #2B051C;
     line-height: 1.2;
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
+@media only screen and (max-width: 480px) {
+    .container__servicios {
+        width: 500px;
+    }
+
+    .servicios {
+        margin: 0 30px;
+    }
+
+    .icon-group {
+        font-size: 25px;
+    }
+
+    .informacion h3 {
+        font-size: 20px;
+    }
+
+    .informacion p {
+        font-size: 15px;
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .container__servicios {
+        width: 600px;
+    }
+
+    .servicios {
+        margin: 0 30px;
+    }
+
+    .icon-group {
+        font-size: 25px;
+    }
+
+    .informacion h3 {
+        font-size: 20px;
+    }
+
+    .informacion p {
+        font-size: 15px;
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 769px y un máximo de 1023px (computadoras portátiles) */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .servicios {
+        margin: 0 40px;
+    }
+}
+
+
+/* Sección Entérate de nuestras colecciones */
+
+.sendEmail__Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.sendEmail__Container h1 {
+    font-family: 'Xanh Mono', monospace;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #810338;
+}
+
+.form__container {
+    text-align: center;
+}
+
+/* CAJA EMAIL */
+
+.form__container #email {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #910C6F;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* boton enviar CAJA EMAIL */
+.button__sendEmail {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #910C6F;
+    width: 100px;
+    height: 40px;
+    color: #910C6F;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #F6F6F6;
+}
+
+.button__sendEmail:hover {
+    color: #F6F6F6;
+    background-color: #910C6F;
+}
+
+
+
+
+
+
+
+
+
+/* MODAL */
+
+/* Estilos para el modal */
+.container__modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Se activará el scroll si es necesario */
+    background-color: rgba(249, 149, 225, 0.3);
+}
+
+/* Ajuste para centrar la modal */
+.container__modal .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 700px;
+    height: 380px;
+    background-image: url('./img/seis.jpg');
+    border: 2px solid #910C6F;
+    box-shadow: 0 0 10px;
+    border-radius: 20px;
+}
+
+.mensaje {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+    width: 400px;
+    font-family: 'Xanh Mono', monospace;
+    font-size: 25px;
+    margin: auto;
+    padding-bottom: 110px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    color: #910C6F;
+}
+
+/* Estilos para el botón de cerrar la modal */
+.close {
+    color: #910C6F;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #F157A4;
+    text-decoration: none;
+    cursor: pointer;
 }

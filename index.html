@@ -89,9 +89,29 @@
         </div>
     </section>
 
-    
+    <!-- Sección Entérate de nuestras colecciones -->
 
-    <script src="./js/navbar.js"></script>
+    <section>
+        <div class="sendEmail__Container">
+            <h1><u>Entérate de nuestras colecciones</u></h1>
+            <form class="form__container">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="ingresa aquí tu correo" required><br>
+                <button class="button__sendEmail" type="submit">Enviar</button>
+            </form>
+            <div id="myModal" class="container__modal">
+                <div class="modal-content">
+                    <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                    <div class="mensaje">
+                        <p>¡Genial! 💎 Gracias por enviar tu correo electrónico.<br>Ahora estarás al tanto de nuestras
+                            nuevas colecciones,<br> llenas de elegancia y estilo.<br><br>(✿◡‿◡) *:･ﾟ✧☆</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/navbar-sendEmail.js"></script>
 </body>
 
 </html>
