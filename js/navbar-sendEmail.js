@@ -9,11 +9,71 @@ navToggle.addEventListener("click", () => {
 
 // PRACTICANDO
 
+const userEmail = document.querySelector("[name=email]");
+
+const setErrors = () => {
+    if (field, isError = true) {
+        // field.classList.remove("form__container .email");
+        //field.classList.add("invalid");
+        // field.classList.replace("email.border", "invalid");
+        field.style.border = "1px solid #FF0000"; // Cambiar el estilo del borde
+        field.style.boxShadow = "0 0 10px #FF0000"; // Añadir un sombreado
+        field.nextElementSibling.classList.add("error");
+        field.nextElementSibling.innerText = `El campo E-mail debe tener un formato válido => ejemplo@email.com`;
+    } else {
+        field.style.border = "";
+        field.style.boxShadow = "";
+        field.nextElementSibling.classList.remove("error");
+        field.nextElementSibling.innerText = "";
+    }
+}
+
+
+userEmail.addEventListener("blur", function (e) {
+    const field = e.target;
+    const emailValue = e.target.value;
+    if (emailValue.trim().length === 0) {
+        // field.classList.remove("form__container .email");
+        //field.classList.add("invalid");
+        // field.classList.replace("email.border", "invalid");
+        field.style.border = "1px solid #FF0000"; // Cambiar el estilo del borde
+        field.style.boxShadow = "0 0 10px #FF0000"; // Añadir un sombreado
+        field.nextElementSibling.classList.add("error");
+        field.nextElementSibling.innerText = "El correo electrónico es requerido";
+    } else {
+        field.style.border = "";
+        field.style.boxShadow = "";
+        field.nextElementSibling.classList.remove("error");
+        field.nextElementSibling.innerText = "";
+    }
+})
+
+const validateEmailFormat = e => {
+    const field = e.target;
+    const emailValue = e.target.value;
+    const regex = new RegExp(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+    if (emailValue.trim().length > 5 && !regex.test(emailValue)) {
+        // field.classList.remove("form__container .email");
+        //field.classList.add("invalid");
+        // field.classList.replace("email.border", "invalid");
+        field.style.border = "1px solid #FF0000"; // Cambiar el estilo del borde
+        field.style.boxShadow = "0 0 10px #FF0000"; // Añadir un sombreado
+        field.nextElementSibling.classList.add("error");
+        field.nextElementSibling.innerText = `El campo E-mail debe tener un formato válido => ejemplo@email.com`;
+    } else {
+        field.style.border = "";
+        field.style.boxShadow = "";
+        field.nextElementSibling.classList.remove("error");
+        field.nextElementSibling.innerText = "";
+    }
+}
+
+userEmail.addEventListener("input", validateEmailFormat);
 
 
 // FIN PRACTICANDO
 
-// // Validación campo email
+// // Validación campo emaildddd
 // const userEmail = document.querySelector(".email");
 // const emailError = document.querySelector("#emailError");
 

@@ -337,8 +337,18 @@ nav {
     cursor: not-allowed;
 } */
 
+/* .invalid {
+    border: #FF0000;
+    box-shadow: 0 0 10px #FF0000;
+} */
 
-
+.error {
+    display: flex;
+    flex-direction: column;
+    color: #FF0000;
+    font-weight: bold;
+    font-family: 'Xanh Mono', monospace;
+}
 
 
 
