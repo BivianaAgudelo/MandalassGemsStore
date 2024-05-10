@@ -95,9 +95,12 @@
         <div class="sendEmail__Container">
             <h1><u>Entérate de nuestras colecciones</u></h1>
             <form class="form__container">
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="ingresa aquí tu correo" required><br>
-                <button class="button__sendEmail" type="submit">Enviar</button>
+                <label>
+                    <input type="email" class="email" name="email" placeholder="ingresa aquí tu correo" minlength="5" required>
+                </label>
+                <br>
+                <span class="error" id="emailError"></span>
+                <button class="button__sendEmail" id="enviarBtn" type="submit" disabled>Enviar</button>
             </form>
             <div id="myModal" class="container__modal">
                 <div class="modal-content">
