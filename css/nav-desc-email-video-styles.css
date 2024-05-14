@@ -1,24 +1,28 @@
 /* Definición de variables de colores */
 
 :root {
-    /* Blanco Brillante */
+    /* Blanco */
     --color-blanco: #F6F6F6;
-    /* Rosa Algodón de Azúcar */
-    --color-rosa-algodon-azucar: #FA8AE0;
-    /* Rosa Nube de Algodón */
-    --color-rosa-nube-algodon: #F995E1;
-    /* Rosa Crepúsculo Profundo */
-    --color-rosa-crepusculo-profundo: #910C6F;
-    /* Rosa Medianoche */
-    --color-rosa-medianoche: #2B051C;
-    /* Rosa Cereza Intensa */
-    --color-rosa-cereza-intensa: #F157A4;
-
-    --color-rosa-cereza-intensa: #810338
+    /* Rosa pastel */
+    --color-rosa-pastel: #FA8AE0;
+    /* Rosa pálido */
+    --color-rosa-palido: #F995E1;
+    /* Gris claro */
+    --color-gris-claro: #CCC;
+    /* Rosa intenso */
+    --color-rosa-intenso: #F157A4;
+    /* Púrpura claro */
+    --color-purpura-claro: #910C6F;
+    /* Púrpura oscuro */
+    --color-purpura-oscuro: #2B051C;
+    /* Púrpura profundo */
+    --color-purpura-profundo: #810338;
+    /* Rojo */
+    --color-rojo: #FF0000;
 }
 
 body {
-    background-image: url('./img/background.jpg');
+    background-image: url('../img/background.jpg');
 }
 
 /* HEADER */
@@ -40,7 +44,7 @@ img {
     border-radius: 15px;
     width: 220px;
     height: 220px;
-    box-shadow: 2px 2px 5px #FA8AE0;
+    box-shadow: 2px 2px 5px var(--color-rosa-pastel);
 }
 
 nav {
@@ -49,13 +53,13 @@ nav {
     right: 50px;
     height: 50px;
     border-radius: 5px;
-    background-color: #F995E1;
+    background-color: var(--color-rosa-palido);
     display: flex;
     align-items: center;
 }
 
 .nav__toggle {
-    color: #910C6F;
+    color: var(--color-purpura-claro);
     background: none;
     border: none;
     font-size: 30px;
@@ -74,13 +78,13 @@ nav {
     font-family: 'Xanh Mono', monospace;
     font-size: 20px;
     font-weight: bold;
-    color: #F6F6F6;
+    color: var(--color-blanco);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .nav-link:hover {
-    color: #910C6F;
+    color: var(--color-purpura-claro);
     font-size: 25px;
     text-decoration: underline;
     transition: font-size 0.9s ease;
@@ -103,7 +107,7 @@ nav {
     .nav-menu {
         display: none;
         left: 0;
-        background-color: #F995E1;
+        background-color: var(--color-rosa-palido);
         border-radius: 5px;
         padding: 20px 0;
         flex-direction: column;
@@ -124,7 +128,7 @@ nav {
     }
 
     .nav-link:hover {
-        color: #910C6F;
+        color: var(--color-purpura-claro);
         font-size: inherit;
         text-decoration: none;
     }
@@ -150,7 +154,7 @@ nav {
     .nav-menu {
         display: none;
         left: 0;
-        background-color: #F995E1;
+        background-color: var(--color-rosa-palido);
         border-radius: 5px;
         padding: 20px 0;
         flex-direction: column;
@@ -171,7 +175,7 @@ nav {
     }
 
     .nav-link:hover {
-        color: #910C6F;
+        color: var(--color-purpura-claro);
         font-size: inherit;
         text-decoration: none;
     }
@@ -201,15 +205,15 @@ nav {
     margin-right: 20px;
     /* Espacio entre el icono y el texto */
     font-size: 30px;
-    color: #910C6F;
+    color: var(--color-purpura-claro);
 }
 
 .informacion h3 {
     font-family: 'Xanh Mono', monospace;
     font-weight: 700;
     font-size: 30px;
-    box-shadow: 2px 2px 5px #F157A4;
-    color: #2B051C;
+    box-shadow: 2px 2px 5px var(--color-rosa-intenso);
+    color: var(--color-purpura-oscuro);
     margin-bottom: 15px;
     justify-content: center;
     align-items: center;
@@ -220,7 +224,7 @@ nav {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 20px;
-    color: #2B051C;
+    color: var(--color-purpura-oscuro);
     line-height: 1.2;
 }
 
@@ -293,7 +297,7 @@ nav {
     font-weight: bolder;
     margin-bottom: 15px;
     font-size: 25px;
-    color: #810338;
+    color: var(--color-purpura-profundo);
 }
 
 .form__container {
@@ -306,7 +310,7 @@ nav {
     font-family: 'Xanh Mono', monospace;
     font-size: 20px;
     border-radius: 10px;
-    border: 2px solid #910C6F;
+    border: 2px solid var(--color-purpura-claro);
     width: 500px;
     height: 40px;
     margin-bottom: 20px;
@@ -318,42 +322,36 @@ nav {
     font-family: 'Xanh Mono', monospace;
     font-size: 20px;
     border-radius: 10px;
-    border: 2px solid #910C6F;
+    border: 2px solid var(--color-purpura-claro);
     width: 100px;
     height: 40px;
-    color: #910C6F;
+    color: var(--color-purpura-claro);
     font-weight: bold;
     cursor: pointer;
-    background-color: #F6F6F6;
+    background-color: var(--color-blanco);
 }
 
 .button__sendEmail:hover {
-    color: #F6F6F6;
-    background-color: #910C6F;
+    color: var(--color-blanco);
+    background-color: var(--color-purpura-claro);
 }
 
-/* .button__sendEmail:disabled {
-    background: #ccc;
-    cursor: not-allowed;
-} */
+/* Estilos para errores y botón JS validación del campo email*/
 
-/* .invalid {
-    border: #FF0000;
-    box-shadow: 0 0 10px #FF0000;
-} */
+.button__sendEmail:disabled {
+    background: var(--color-gris-claro);
+    cursor: not-allowed;
+}
 
 .error {
     display: flex;
     flex-direction: column;
-    color: #FF0000;
+    color: var(--color-rojo);
     font-weight: bold;
     font-family: 'Xanh Mono', monospace;
 }
 
-
-
-
-
+/* aquí termina Estilos para errores y botón JS */
 
 
 /* MODAL */
@@ -391,8 +389,8 @@ nav {
     padding: 20px;
     width: 700px;
     height: 380px;
-    background-image: url('./img/backgroundModal.jpg');
-    border: 2px solid #910C6F;
+    background-image: url('../img/backgroundModal.jpg');
+    border: 2px solid var(--color-purpura-claro);
     box-shadow: 0 0 10px;
     border-radius: 20px;
 }
@@ -410,12 +408,12 @@ nav {
     font-weight: bold;
     text-align: center;
     line-height: 1.2;
-    color: #910C6F;
+    color: var(--color-purpura-claro);
 }
 
 /* Estilos para el botón de cerrar la modal */
 .close {
-    color: #910C6F;
+    color: var(--color-purpura-claro);
     position: absolute;
     top: 15px;
     right: 20px;
@@ -426,7 +424,7 @@ nav {
 
 .close:hover,
 .close:focus {
-    color: #F157A4;
+    color: var(--color-rosa-intenso);
     text-decoration: none;
     cursor: pointer;
 }
