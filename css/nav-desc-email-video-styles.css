@@ -33,7 +33,6 @@ header {
 
 .container__header {
     position: relative;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -93,15 +92,26 @@ nav {
 /* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
 @media only screen and (max-width: 480px) {
 
+    /* .container__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    } */
+
     img {
-        width: 200px;
-        height: 200px;
+        width: 130px;
+        height: 130px;
+        border-radius: 5px;
+        margin: auto;
     }
 
     nav {
-        display: flex;
+        
         flex-direction: column;
-        right: 80px;
+        right: 3%;
+        position: absolute;
+        justify-content: space-between;
     }
 
     .nav-menu {
@@ -191,17 +201,22 @@ nav {
 .container__servicios {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
-    width: 940px;
-    margin: 0 auto;
-    padding-top: 200px;
+    padding: 200px 400px 0px 400px;
+    background-color: antiquewhite;
 }
 
 .servicios {
+    width: 100%;
     display: flex;
+    flex-direction: row;
 }
 
 .icon-group {
+    display: flex;
+    flex-direction: column;
     margin-right: 20px;
     /* Espacio entre el icono y el texto */
     font-size: 30px;
@@ -231,15 +246,12 @@ nav {
 /* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
 @media only screen and (max-width: 480px) {
     .container__servicios {
-        width: 500px;
-    }
-
-    .servicios {
-        margin: 0 30px;
+        display: flex;
+        padding: 200px 20px 0px 20px;
     }
 
     .icon-group {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .informacion h3 {
@@ -254,15 +266,12 @@ nav {
 /* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .container__servicios {
-        width: 600px;
-    }
-
-    .servicios {
-        margin: 0 30px;
+        display: flex;
+        padding: 200px 20px 0px 20px;
     }
 
     .icon-group {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .informacion h3 {
@@ -276,8 +285,29 @@ nav {
 
 /* Estilos para dispositivos con un ancho mínimo de 769px y un máximo de 1023px (computadoras portátiles) */
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
-    .servicios {
-        margin: 0 40px;
+    .container__servicios {
+        display: flex;
+        padding: 200px 80px 0px 80px;
+    }
+
+    .icon-group {
+        font-size: 25px;
+    }
+
+    .informacion h3 {
+        font-size: 25px;
+    }
+
+    .informacion p {
+        font-size: 20px;
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 1024px y un máximo de 1200px (computadoras de escritorio) */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .container__servicios {
+        display: flex;
+        padding: 200px 80px 0px 80px;
     }
 }
 
@@ -335,6 +365,50 @@ nav {
     color: var(--color-blanco);
     background-color: var(--color-purpura-claro);
 }
+
+/* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
+@media only screen and (max-width: 480px) {
+    /* Sección Entérate de nuestras colecciones */
+
+    .sendEmail__Container {
+        margin-top: 200px;
+        background-color: aqua;
+    }
+
+    .sendEmail__Container h1 {
+        font-size: 15px;
+    }
+
+    /* CAJA EMAIL */
+
+    .form__container .email {
+        font-size: 12px;
+        border-radius: 5px;
+        border: 1px solid var(--color-purpura-claro);
+        width: 200px;
+        height: 30px;
+    }
+
+    /* boton enviar CAJA EMAIL */
+    .button__sendEmail {
+        font-size: 12px;
+        border-radius: 5px;
+        border: 1px solid var(--color-purpura-claro);
+        width: 80px;
+        height: 30px;
+    }
+
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
+
+/* Estilos para dispositivos con un ancho mínimo de 769px y un máximo de 1023px (computadoras portátiles) */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {}
+
+/* Estilos para dispositivos con un ancho mínimo de 1024px y un máximo de 1200px (computadoras de escritorio) */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {}
+
 
 /* Estilos para errores y botón JS validación del campo email*/
 
