@@ -92,12 +92,13 @@ nav {
 /* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
 @media only screen and (max-width: 480px) {
 
-    /* .container__header {
+    .container__header {
+        position: relative;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    } */
+        flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
+        justify-content: center; /* Centramos verticalmente los elementos */
+        align-items: center; /* Centramos horizontalmente los elementos */
+    }
 
     img {
         width: 130px;
@@ -107,7 +108,7 @@ nav {
     }
 
     nav {
-        
+        display: none;
         flex-direction: column;
         right: 3%;
         position: absolute;
@@ -134,7 +135,7 @@ nav {
     }
 
     .nav-link {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     .nav-link:hover {
