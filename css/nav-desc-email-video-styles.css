@@ -95,24 +95,33 @@ nav {
     .container__header {
         position: relative;
         display: flex;
-        flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
-        justify-content: center; /* Centramos verticalmente los elementos */
-        align-items: center; /* Centramos horizontalmente los elementos */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     img {
         width: 130px;
         height: 130px;
         border-radius: 5px;
-        margin: auto;
     }
 
     nav {
         display: none;
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav {
+        display: flex;
         flex-direction: column;
-        right: 3%;
-        position: absolute;
-        justify-content: space-between;
+        right: 80px;
     }
 
     .nav-menu {
@@ -135,7 +144,7 @@ nav {
     }
 
     .nav-link {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .nav-link:hover {
@@ -149,8 +158,8 @@ nav {
     }
 }
 
-/* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+/* Estilos para dispositivos con un ancho mínimo de 769px y un máximo de 1023px (computadoras portátiles) */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
     img {
         width: 200px;
         height: 200px;
@@ -206,7 +215,6 @@ nav {
     align-items: center;
     gap: 20px;
     padding: 200px 400px 0px 400px;
-    background-color: antiquewhite;
 }
 
 .servicios {
@@ -369,15 +377,16 @@ nav {
 
 /* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
 @media only screen and (max-width: 480px) {
+
     /* Sección Entérate de nuestras colecciones */
 
     .sendEmail__Container {
         margin-top: 200px;
-        background-color: aqua;
     }
 
     .sendEmail__Container h1 {
         font-size: 15px;
+        text-align: center;
     }
 
     /* CAJA EMAIL */
@@ -391,6 +400,7 @@ nav {
     }
 
     /* boton enviar CAJA EMAIL */
+
     .button__sendEmail {
         font-size: 12px;
         border-radius: 5px;
@@ -402,13 +412,39 @@ nav {
 }
 
 /* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 
-/* Estilos para dispositivos con un ancho mínimo de 769px y un máximo de 1023px (computadoras portátiles) */
-@media only screen and (min-width: 769px) and (max-width: 1023px) {}
+    /* Sección Entérate de nuestras colecciones */
 
-/* Estilos para dispositivos con un ancho mínimo de 1024px y un máximo de 1200px (computadoras de escritorio) */
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {}
+    .sendEmail__Container {
+        margin-top: 200px;
+    }
+
+    .sendEmail__Container h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* CAJA EMAIL */
+
+    .form__container .email {
+        font-size: 15px;
+        border-radius: 5px;
+        border: 2px solid var(--color-purpura-claro);
+        width: 250px;
+        height: 30px;
+    }
+
+    /* boton enviar CAJA EMAIL */
+
+    .button__sendEmail {
+        font-size: 15px;
+        border-radius: 5px;
+        border: 2px solid var(--color-purpura-claro);
+        width: 85px;
+        height: 30px;
+    }
+}
 
 
 /* Estilos para errores y botón JS validación del campo email*/
@@ -427,6 +463,22 @@ nav {
 }
 
 /* aquí termina Estilos para errores y botón JS */
+
+/* aquí empieza Estilos para errores y botón JS en media query*/
+
+/* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
+@media only screen and (max-width: 480px) {
+    .error {
+        font-size: 12px;
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .error {
+        font-size: 15px;
+    }
+}
 
 
 /* MODAL */
@@ -502,4 +554,116 @@ nav {
     color: var(--color-rosa-intenso);
     text-decoration: none;
     cursor: pointer;
+}
+
+/* MODAL MEDIA QUERY*/
+
+/* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
+@media only screen and (max-width: 480px) {
+
+    /* Estilos para el contenido del modal */
+    .modal-content {
+        width: 80%;
+        max-width: 270px;
+        height: auto;
+        padding: 20px;
+        border: 1px solid var(--color-purpura-claro);
+        background-image: url('../img/mariposa.jpg');
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mensaje {
+        width: 70%;
+        font-size: 12px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Estilos para el botón de cerrar la modal */
+    .close {
+        font-size: 15px;
+        position: absolute;
+        /* botón en una posición fija dentro de la modal */
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* Estilos para el contenido del modal */
+    .modal-content {
+        width: 80%;
+        max-width: 270px;
+        height: auto;
+        padding: 20px;
+        border: 1px solid var(--color-purpura-claro);
+        background-image: url('../img/mariposa.jpg');
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mensaje {
+        width: 70%;
+        font-size: 12px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Estilos para el botón de cerrar la modal */
+    .close {
+        font-size: 15px;
+        position: absolute;
+        /* botón en una posición fija dentro de la modal */
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 769px y un máximo de 1023px (computadoras portátiles) */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+
+    /* Estilos para el contenido del modal */
+    .modal-content {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border: 2px solid var(--color-purpura-claro);
+        background-image: url('../img/mariposa.jpg');
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mensaje {
+        width: 70%;
+        font-size: 20px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Estilos para el botón de cerrar la modal */
+    .close {
+        font-size: 25px;
+        position: absolute;
+        /* botón en una posición fija dentro de la modal */
+        top: 20px;
+        right: 20px;
+    }
 }
