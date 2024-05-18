@@ -1,0 +1,73 @@
+/* Definición de variables de colores */
+
+:root {
+    /* Blanco */
+    --color-blanco: #F6F6F6;
+    /* Rosa pastel */
+    --color-rosa-pastel: #FA8AE0;
+    /* Rosa pálido */
+    --color-rosa-palido: #F995E1;
+    /* Gris claro */
+    --color-gris-claro: #CCC;
+    /* Rosa intenso */
+    --color-rosa-intenso: #F157A4;
+    /* Púrpura claro */
+    --color-purpura-claro: #910C6F;
+    /* Púrpura oscuro */
+    --color-purpura-oscuro: #2B051C;
+    /* Púrpura profundo */
+    --color-purpura-profundo: #810338;
+    /* Rojo */
+    --color-rojo: #FF0000;
+}
+
+footer {
+    background-color: var(--color-rosa-palido);
+    padding: 20px 50px;
+    margin: 30px 50px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.container__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.img_footer img {
+    width: 150px;
+    height: auto;
+}
+
+.contenido_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.parrafo p {
+    margin: 5px 0;
+    font-family: 'Xanh Mono', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-blanco);
+    letter-spacing: 1.5px;
+}
+
+.icon__group {
+    display: flex;
+    gap: 10px;
+}
+
+.icon__group a {
+    text-decoration: none;
+    color: var(--color-purpura-claro);
+    font-size: 30px;
+}
+
+.icon__group a:hover {
+    color: var(--color-blanco); /* Color al pasar el ratón */
+}
