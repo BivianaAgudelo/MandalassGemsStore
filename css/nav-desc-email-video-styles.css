@@ -55,6 +55,7 @@ nav {
     background-color: var(--color-rosa-palido);
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .nav__toggle {
@@ -665,5 +666,86 @@ nav {
         /* botón en una posición fija dentro de la modal */
         top: 20px;
         right: 20px;
+    }
+}
+
+
+/* Sección Video Nosotros */
+
+.video__container {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video__title {
+    font-family: 'Xanh Mono', monospace;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: var(--color-purpura-profundo);
+    text-align: center;
+}
+
+.container__iframe {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container__iframe::after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.container__iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* Elimina cualquier borde del iframe */
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
+@media only screen and (max-width: 480px) {
+
+    .video__container {
+        margin-top: 200px;
+    }
+
+    .video__title {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .video__container {
+        margin-top: 200px;
+    }
+
+    .video__title {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 769px y un máximo de 1023px (computadoras portátiles) */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .video__container {
+        margin-top: 200px;
+    }
+
+    .video__title {
+        font-size: 20px;
+        text-align: center;
     }
 }
