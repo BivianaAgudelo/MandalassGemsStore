@@ -101,7 +101,7 @@ nav {
         align-items: center;
     }
 
-    img {
+    .container__header img {
         width: 130px;
         height: 130px;
         border-radius: 5px;
@@ -114,7 +114,7 @@ nav {
 
 /* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    img {
+    .container__header img {
         width: 150px;
         height: 150px;
     }
@@ -161,7 +161,7 @@ nav {
 
 /* Estilos para dispositivos con un ancho mínimo de 769px y un máximo de 1023px (computadoras portátiles) */
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
-    img {
+    .container__header img {
         width: 200px;
         height: 200px;
     }

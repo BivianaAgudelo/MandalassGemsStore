@@ -3,30 +3,18 @@
 :root {
     /* Blanco */
     --color-blanco: #F6F6F6;
-    /* Rosa pastel */
-    --color-rosa-pastel: #FA8AE0;
     /* Rosa pálido */
     --color-rosa-palido: #F995E1;
-    /* Gris claro */
-    --color-gris-claro: #CCC;
-    /* Rosa intenso */
-    --color-rosa-intenso: #F157A4;
     /* Púrpura claro */
     --color-purpura-claro: #910C6F;
-    /* Púrpura oscuro */
-    --color-purpura-oscuro: #2B051C;
-    /* Púrpura profundo */
-    --color-purpura-profundo: #810338;
-    /* Rojo */
-    --color-rojo: #FF0000;
 }
 
 footer {
     background-color: var(--color-rosa-palido);
     padding: 20px 50px;
-    margin: 30px 50px;
+    margin: 30px 30px;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 30px;
 }
 
 .container__footer {
@@ -69,5 +57,71 @@ footer {
 }
 
 .icon__group a:hover {
-    color: var(--color-blanco); /* Color al pasar el ratón */
+    color: var(--color-blanco);
+    /* Color al pasar el ratón */
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
+@media only screen and (max-width: 480px) {
+
+    footer {
+        margin: 10px 10px;
+        border-radius: 20px;
+    }
+
+    .img_footer img {
+        width: 100px;
+    }
+
+    .parrafo p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .icon__group a {
+        font-size: 20px;
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    footer {
+        margin: 10px 10px;
+        border-radius: 20px;
+    }
+
+    .img_footer img {
+        width: 120px;
+    }
+
+    .parrafo p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .icon__group a {
+        font-size: 25px;
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 769px y un máximo de 1023px (computadoras portátiles) */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    footer {
+        margin: 10px 10px;
+        border-radius: 20px;
+    }
+
+    .img_footer img {
+        width: 130px;
+    }
+
+    .parrafo p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .icon__group a {
+        font-size: 25px;
+    }
 }
