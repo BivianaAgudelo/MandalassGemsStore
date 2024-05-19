@@ -1,0 +1,82 @@
+/* Definición de variables de colores */
+
+:root {
+    /* Blanco */
+    --color-blanco: #F6F6F6;
+    /* Rosa pastel */
+    --color-rosa-pastel: #FA8AE0;
+    /* Rosa pálido */
+    --color-rosa-palido: #F995E1;
+    /* Gris claro */
+    --color-gris-claro: #CCC;
+    /* Rosa intenso */
+    --color-rosa-intenso: #F157A4;
+    /* Púrpura claro */
+    --color-purpura-claro: #910C6F;
+    /* Púrpura oscuro */
+    --color-purpura-oscuro: #2B051C;
+    /* Púrpura profundo */
+    --color-purpura-profundo: #810338;
+    /* Rojo */
+    --color-rojo: #FF0000;
+}
+
+
+
+.agregar_producto {
+    width: 35%; /* Ajuste de ancho para mejor distribución */
+    /* background-color: blueviolet; */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url('../img/fondo.jpg'); */
+    box-shadow: 2px 4px 8px var(--color-rosa-intenso); 
+    background-color: rgba(255, 255, 255, 0.4);
+    max-height: 500px;
+}
+
+.agregar_producto h1 {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form_container_galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.form_container_galeria input {
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button_container_galeria {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.button_submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(112, 3, 89);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button_submit:hover {
+    background-color: rgb(140, 3, 112);
+}
