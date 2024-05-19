@@ -22,17 +22,23 @@
 }
 
 
+:root {
+    /* Blanco */
+    --color-blanco: #F6F6F6;
+    /* Rosa intenso */
+    --color-rosa-intenso: #F157A4;
+    /* Púrpura claro */
+    --color-magenta-profundo: #700359;
+}
 
 .agregar_producto {
-    width: 35%; /* Ajuste de ancho para mejor distribución */
-    /* background-color: blueviolet; */
+    width: 20%; /* Ajuste de ancho para mejor distribución */
+    height: 400px;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-image: url('../img/fondo.jpg'); */
     box-shadow: 2px 4px 8px var(--color-rosa-intenso); 
     background-color: rgba(255, 255, 255, 0.4);
     max-height: 500px;
@@ -42,23 +48,27 @@
     font-family: 'Xanh Mono', monospace;
     font-size: 30px;
     font-weight: bold;
-    color: white;
-    margin-bottom: 20px;
+    color: var(--color-magenta-profundo);
+    margin-bottom: 50px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .form_container_galeria {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
     width: 100%;
 }
 
 .form_container_galeria input {
     padding: 10px;
-    border: 2px solid #fff;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
+    height: 25px;
+    font-family: 'Xanh Mono', monospace;
+    box-shadow: -2px -4px 8px var(--color-rosa-intenso);
 }
 
 .button_container_galeria {
@@ -71,12 +81,16 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(112, 3, 89);
-    color: white;
-    font-size: 16px;
+    background-color: var(--color-magenta-profundo);
+    color: var(--color-blanco);
+    font-size: 18px;
     cursor: pointer;
+    height: 40px;
+    font-family: 'Xanh Mono', monospace;
+    transition: all 500ms;
 }
 
 .button_submit:hover {
-    background-color: rgb(140, 3, 112);
+    background-color: var(--color-rosa-intenso);
+    transform: scale(1.30);
 }
