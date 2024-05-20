@@ -169,3 +169,111 @@
 .boton_eliminar img:hover {
     transform: scale(1.30);
 }
+
+/* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
+@media only screen and (max-width: 480px) {
+
+    .main_container {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    
+     .title_galeria {
+        height: 25px;
+        font-size: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mis_productos {
+        width: 80%;
+        border-radius: 10px;
+    }
+    
+    .mis_productos h1 {
+        font-size: 20px;
+    }
+    
+    .galeria__container {
+        flex-direction: column;
+        max-height: 700px;
+    }
+    
+    .card {
+        border-radius: 10px;
+        height: 250px;
+        /* Altura aumentada */
+        width: 90%;
+    }
+    
+    .img_container {
+        width: 90%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+     .card_container_info p {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+    
+    .boton_eliminar img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .boton_eliminar img:hover {
+        transform: scale(1.30);
+    }
+  }
+  
+  /* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .main_container {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .title_galeria {
+        font-size: 35px;
+        margin-bottom: 60px;
+    }
+
+    .mis_productos {
+        width: 70%;
+    }
+
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+  }
+  
+  /* Estilos para dispositivos con un ancho mínimo de 769px y un máximo de 1023px (computadoras portátiles) */
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .main_container {
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+
+    .title_galeria {
+        font-size: 38px;
+        margin-bottom: 65px;
+    }
+
+    .mis_productos {
+        width: 60%;
+    }
+
+    .card {
+        width: 220px;
+        height: 320px;
+    }
+  }
+  
+  /* Estilos para dispositivos con un ancho mínimo de 1024px (computadoras de escritorio) */
+  @media only screen and (min-width: 1024px) {
+    /* Tus estilos aquí */
+  }
