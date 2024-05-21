@@ -188,28 +188,34 @@
     }
     
     .mis_productos {
-        width: 80%;
+        width: 80vm;
         border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        
     }
     
     .mis_productos h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .galeria__container {
         flex-direction: column;
-        max-height: 700px;
+        max-height: 500px;
+        
     }
     
     .card {
         border-radius: 10px;
-        height: 250px;
-        /* Altura aumentada */
-        width: 90%;
+        height: 80vm;
+        width: 95%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
     
     .img_container {
-        width: 90%;
+        width: 80mv;
         height: auto;
         border-radius: 10px;
     }

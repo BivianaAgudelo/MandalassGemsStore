@@ -12,14 +12,15 @@
 }
 
 .agregar_producto {
-    width: 20%; /* Ajuste de ancho para mejor distribución */
+    width: 20%;
+    /* Ajuste de ancho para mejor distribución */
     height: 400px;
     padding: 20px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 2px 4px 8px var(--color-rosa-intenso); 
+    box-shadow: 2px 4px 8px var(--color-rosa-intenso);
     background-color: rgba(255, 255, 255, 0.4);
     max-height: 500px;
 }
@@ -75,83 +76,136 @@
     transform: scale(1.30);
 }
 
-  /* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
+/* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
 @media only screen and (max-width: 480px) {
     .section_container {
-        flex-direction: column; 
+        flex-direction: column;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: auto;
     }
 
     .agregar_producto {
-        width: 80%; 
-        padding: 20px;
+        width: 80%;
         border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-height: 300px;
+        height: 350px;
         order: -1;
         margin-bottom: 20px;
-        justify-content: center;
     }
-    
+
     .agregar_producto h1 {
         font-size: 18px;
-        padding-bottom: 1px;
     }
-    
+
     .form_container_galeria {
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
-        gap: 35px;
-        width: 100%;
     }
-    
+
     .form_container_galeria input {
-        padding: 10px;
+        padding: 5px;
         border-radius: 5px;
         font-size: 12px;
-        height: 15px; 
+        height: 20px;
+        width: 80%;
     }
-    
+
     .button_container_galeria {
-        flex-direction: column; /* Botones en columna */
-        align-items: center; /* Centra los botones */
-        width: 80%; 
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        display: flex;
     }
-    
+
     .button_submit {
-        
-        text-align: center;
+        display: flex;
+        align-items: center;
         justify-content: center;
         font-size: 15px;
-        width: 80%; /* Ajusta el ancho del botón para dispositivos pequeños */
+        width: 70px;
         margin-bottom: 10px;
-        height: 30px;
+        height: 5vm;
         transition: all 500ms;
-        align-items: center;
+        border-radius: 8px
     }
-    
+
     .button_submit:hover {
         background-color: var(--color-rosa-intenso);
         transform: scale(1);
     }
-    
-  }
-  
-  /* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 481px y un máximo de 768px (tabletas) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .section_container {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .agregar_producto {
+        width: 80%;
+        border-radius: 10px;
+        height: 350px;
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .agregar_producto h1 {
+        font-size: 18px;
+    }
+
+    .form_container_galeria {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form_container_galeria input {
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+        height: 20px;
+        width: 80%;
+    }
+
+    .button_container_galeria {
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        display: flex;
+    }
+
+    .button_submit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        width: 70px;
+        margin-bottom: 10px;
+        height: 5vm;
+        transition: all 500ms;
+        border-radius: 8px
+    }
+
+    .button_submit:hover {
+        background-color: var(--color-rosa-intenso);
+        transform: scale(1);
+    }
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 769px y un máximo de 1023px (computadoras portátiles) */
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
     /* Tus estilos aquí */
-  }
-  
-  /* Estilos para dispositivos con un ancho mínimo de 769px y un máximo de 1023px (computadoras portátiles) */
-  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 1024px (computadoras de escritorio) */
+@media only screen and (min-width: 1024px) {
     /* Tus estilos aquí */
-  }
-  
-  /* Estilos para dispositivos con un ancho mínimo de 1024px (computadoras de escritorio) */
-  @media only screen and (min-width: 1024px) {
-    /* Tus estilos aquí */
-  }
+}
