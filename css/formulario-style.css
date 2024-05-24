@@ -76,6 +76,24 @@
     transform: scale(1.30);
 }
 
+.button_clear {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-magenta-profundo);
+    color: var(--color-blanco);
+    font-size: 18px;
+    cursor: pointer;
+    height: 40px;
+    font-family: 'Xanh Mono', monospace;
+    transition: all 500ms;
+}
+
+.button_clear:hover {
+    background-color: var(--color-rosa-intenso);
+    transform: scale(1.30);
+}
+
 /* Estilos para dispositivos con un ancho máximo de 480px (celulares) */
 @media only screen and (max-width: 480px) {
     .section_container {
@@ -133,6 +151,23 @@
     }
 
     .button_submit:hover {
+        background-color: var(--color-rosa-intenso);
+        transform: scale(1);
+    }
+
+    .button_clear {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        width: 70px;
+        margin-bottom: 10px;
+        height: 5vm;
+        transition: all 500ms;
+        border-radius: 8px
+    }
+
+    .button_clear:hover {
         background-color: var(--color-rosa-intenso);
         transform: scale(1);
     }
@@ -195,6 +230,23 @@
     }
 
     .button_submit:hover {
+        background-color: var(--color-rosa-intenso);
+        transform: scale(1);
+    }
+
+    .button_clear {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        width: 70px;
+        margin-bottom: 10px;
+        height: 5vm;
+        transition: all 500ms;
+        border-radius: 8px
+    }
+
+    .button_clear:hover {
         background-color: var(--color-rosa-intenso);
         transform: scale(1);
     }
