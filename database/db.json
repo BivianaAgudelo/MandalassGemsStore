@@ -1,0 +1,58 @@
+{
+  "productos": [
+    {
+        "id": 1,
+        "nombre_producto": "Set de collares",
+        "precio": 10.99,
+        "img": "https://i.pinimg.com/564x/e0/c9/99/e0c999ccdf1849e4428338df197dedfb.jpg"
+    },
+    {
+        "id": 2,
+        "nombre_producto": "Pulsera hombre",
+        "precio": 20.50,
+        "img": "https://i.pinimg.com/564x/2c/8a/94/2c8a94ba271757518294f45d40682dad.jpg"
+    },
+    {
+        "id": 3,
+        "nombre_producto": "Pulsera mujer",
+        "precio": 15.75,
+        "img": "https://i.pinimg.com/564x/27/dc/f8/27dcf8609d8892d3b0c969cda4ffb14d.jpg"
+    },
+    {
+        "id": 4,
+        "nombre_producto": "Set de pulseras",
+        "precio": 10.99,
+        "img": "https://i.pinimg.com/564x/d4/8d/b5/d48db5b70a3ac4aa5306df3c687c1c75.jpg"
+    },
+    {
+        "id": 5,
+        "nombre_producto": "Pulsera hombre oro",
+        "precio": 28.50,
+        "img": "https://i.pinimg.com/564x/de/0e/74/de0e7445f5b3dac2603c12794ff9ed26.jpg"
+    },
+    {
+        "id": 6,
+        "nombre_producto": "Tobillera macrame",
+        "precio": 19.75,
+        "img": "https://i.pinimg.com/564x/09/a1/bf/09a1bf5c11043d1d4783583c3ca031e8.jpg"
+    },
+    {
+        "id": 7,
+        "nombre_producto": "https://i.pinimg.com/564x/c6/e7/a4/c6e7a436fe327b8116885ec6d8c8d933.jpg",
+        "precio": 8.55,
+        "img": "Aretes en hilo"
+    },
+    {
+        "id": 8,
+        "nombre_producto": "Anillo flor plata",
+        "precio": 16.50,
+        "img": "https://i.pinimg.com/564x/47/99/67/47996704524bf6c5457ce34ad60e1e3d.jpg"
+    },
+    {
+        "id": 9,
+        "nombre_producto": "Anillo mariposa plata",
+        "precio": 15.75,
+        "img": "https://i.pinimg.com/564x/68/9e/e0/689ee042ec58391a3049bc3119c948a4.jpg"
+    }
+  ]
+}
