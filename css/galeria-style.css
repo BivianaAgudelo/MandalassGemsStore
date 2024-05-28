@@ -120,8 +120,9 @@
 
 .img_container img {
     width: 100%;
-    height: auto;
+    height: 80%;
     object-fit: cover;
+    border-radius: 5px;
     /* Recorte de imagen si es necesario para llenar el contenedor */
 }
 
