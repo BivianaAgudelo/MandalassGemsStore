@@ -20,7 +20,11 @@ function createCard(id, nombre_producto, precio, img) {
                         </div>
                     </div>`;
 
-  galeriaContainer.appendChild(card);
+   galeriaContainer.appendChild(card);
+const deleteButton = card.querySelector("[data-id]");
+deleteButton.addEventListener("click", () => {
+  handleDelete(id);
+});
   return card;
 }
 
@@ -36,6 +40,17 @@ const render = async () => {
     console.log(error);
   }
 };
+
+const handleDelete = async (id) => {
+    console.log(`Attempting to delete product with id: ${id}`);
+    try {
+      await servicesProducts.deleteProduct(id);
+      galeriaContainer.innerHTML = ""; // Clear existing content
+      render(); // Re-render the product list
+    } catch (error) {
+      console.log("Error handling delete:", error);
+    }
+  };  
 
 // Crear Producto en el formulario a dar click en el botón
 

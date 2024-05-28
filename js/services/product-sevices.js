@@ -41,7 +41,23 @@ const createProducts = async (nombre_producto, precio, img) => {
     }
 };
 
+const deleteProduct = async (id) => {
+    try {
+        const response = await fetch(`http://localhost:3000/productos/${id}`, {
+            method: "DELETE"
+        });
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    } catch (err) {
+        console.error("Error deleting product:", err);
+        throw err;
+    }
+};
+
 export const servicesProducts = {
     productList,
     createProducts,
+    deleteProduct,
 }
