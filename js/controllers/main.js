@@ -37,16 +37,23 @@ const render = async () => {
   }
 };
 
-form.addEventListener("submit", (event) => {
+// Crear Producto en el formulario a dar click en el botón
+
+form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const nombre_producto = document.querySelector("[data-name]").value;
     const precio = document.querySelector("[data-price]").value;
     const img = document.querySelector("[data-image]").value;
 
-    servicesProducts.createProducts(nombre_producto, precio, img)
-    .then((res) => console.log(res))
-    .catch((err) => console.log(err))  
+    try {
+        await servicesProducts.createProducts(nombre_producto, precio, img);
+        // Re-render the product list to include the new product
+        galeriaContainer.innerHTML = ""; // Clear existing content
+        render(); // Re-render the product list
+    } catch (err) {
+        console.log(err);
+    }
 });
 
 render();

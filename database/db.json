@@ -55,16 +55,10 @@
       "img": "https://i.pinimg.com/564x/68/9e/e0/689ee042ec58391a3049bc3119c948a4.jpg"
     },
     {
-      "id": "1cc6",
-      "nombre_producto": "collar rojo",
-      "precio": "50",
-      "img": "https://i.pinimg.com/236x/f7/b5/62/f7b5629fb9beea3fe384bc2636885287.jpg"
-    },
-    {
-      "id": "8be8",
-      "nombre_producto": "colla tela",
+      "id": 10,
+      "nombre_producto": "Corazón",
       "precio": "100",
-      "img": "https://i.pinimg.com/236x/9c/f3/c7/9cf3c7442e8082e1963d05904090596a.jpg"
+      "img": "https://i.pinimg.com/236x/4c/e0/bc/4ce0bcc57cb5e1d371b051589c03dca3.jpg"
     }
   ]
 }
